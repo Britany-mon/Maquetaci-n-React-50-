@@ -13,22 +13,34 @@
   justify-content: center;
   font-size: 1.1rem;
   color: white;
+  font-style: italic;
 }
 
 .main-content {
   flex: 1;
-  /* main area green matching earlier design */
-  background-color: #c8e6c9;
+  /* main area green matching earlier design with subtle gradient */
+  background: linear-gradient(180deg, #c8e6c9 0%, #e0f2e9 100%);
   padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center; /* center horizontally */
+  border-radius: 16px;
+  margin: 0 16px; /* space from sidebar */
 }
 
 .cards-row {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 24px;
+  align-items: center; /* vertically center cards */
+  gap: 32px;
   flex: 1;
+}
+
+.component-uno {
+  text-align: center;
+  margin-top: 24px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
 }

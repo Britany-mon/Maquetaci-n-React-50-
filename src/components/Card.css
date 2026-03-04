@@ -2,31 +2,52 @@
   /* full card with rounded corners and a border */
   border: 1px solid #cfd8dc;
   border-radius: 16px;
-  width: 220px;
+  width: 260px;
+  height: 300px;
   margin: 8px;
   display: flex;
   flex-direction: column;
   overflow: hidden; /* ensure header/background clips to radius */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.card-component:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .card-content {
   /* upper half: matching main background tone */
-  background-color: #e6f4e6;
-  padding: 16px;
+  background-color: rgba(200,230,201,0.85);
+  padding: 24px;
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
   text-align: center;
+  color: white;
+  font-size: 1.2rem;
 }
 
 .card-footer {
   /* bottom half: white with title text */
   background: #ffffff;
-  padding: 12px;
+  padding: 16px;
   text-align: center;
   font-weight: bold;
   color: #333;
+  font-size: 1.1rem;
+}
+
+.card-footer {
+  /* bottom half: white with title text */
+  background: #ffffff;
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1rem;
+  border-top: 1px solid #e0e0e0;
 }

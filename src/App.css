@@ -51,3 +51,12 @@
 .page-container {
   flex: 1;
 }
+
+/* global body font and color */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #242424;
+}
