@@ -1,0 +1,32 @@
+.card-component {
+  /* full card with rounded corners and a border */
+  border: 1px solid #cfd8dc;
+  border-radius: 16px;
+  width: 220px;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* ensure header/background clips to radius */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-content {
+  /* upper half: matching main background tone */
+  background-color: #e6f4e6;
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card-footer {
+  /* bottom half: white with title text */
+  background: #ffffff;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}

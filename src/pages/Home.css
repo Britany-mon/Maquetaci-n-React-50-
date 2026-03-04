@@ -1,0 +1,34 @@
+.page-container {
+  display: flex;
+  height: calc(100vh - 50px); /* leave space for footer */
+}
+
+.sidebar {
+  width: 240px;
+  /* revert to original lighter green */
+  background-color: #a5d6a7;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.main-content {
+  flex: 1;
+  /* main area green matching earlier design */
+  background-color: #c8e6c9;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1;
+}
